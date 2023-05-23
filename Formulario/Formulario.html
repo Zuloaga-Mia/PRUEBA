@@ -1,0 +1,74 @@
+<!Doctype HTML>
+
+<html>
+	<head>
+		<title> FORMULARIO </title>
+        <script>
+         function mostrarAlerta() {
+          alert("¡Formulario enviado!");
+ }
+       </script>
+       <link rel="stylesheet" type="text/css" href="Estilo1.css">
+
+  </head>
+  <body>
+  <h1>FORMULARIO </h1>
+  <h2>Registro </h2>
+
+  <form action="procesar_formulario.php" method="POST">
+
+  <div class="form-group">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required></div>
+
+  <div class="form-group">
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" required></div>
+
+  <div class="form-group">
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" name="edad" required></div>
+
+  <div class="form-group">
+    <label for="cedula">Cédula:</label>
+    <input type="number" id="cedula" name="cedula" required></div>
+
+  <div class="form-group">
+    <label for="teléfono">Teléfono:</label>
+    <input type="number" id="teléfono" name="teléfono" required></div>
+
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required></div>
+
+  <div class="form-group">
+    <label> Género:</label>
+    <input type="radio" name="genero">Masculino<br>
+    <input type="radio" name="genero">Femenino<br>
+
+   </div>
+
+   <div class="form-group">
+   <label>Semestre:</label><br>
+   <select name="" id="">
+   <option value="">Seleccionar</option>
+   <option value="">Primer semestre</option>
+   <option value="">Segundo semestre</option>
+   <option value="">Tercero semestre</option>
+   <option value="">Cuarto semestre</option>
+   <option value="">Quinto semestre</option>
+   <option value="">Sexto semestre</option>
+   <option value="">Séptimo semestre</option>
+   <option value="">Octavo semestre</option>
+
+   </select>
+   </div>
+
+
+
+
+       <input type="submit"onclick="mostrarAlerta()" ></button>
+  </form>
+
+</body>
+</html>
